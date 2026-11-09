@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+    <h2>This is the create a post page</h2>
+    <p>You may enter a <strong>Title</strong> for your post and in the <strong>Main Body</strong> you can enter what you want the world to know!</p>
+    <p>Click the <strong>Post</strong> button when you're done!</p>
+
+    <form action="/publish" method="POST">
+        <h3><label for="title">Title</label></h3>
+        <input type="text" name="title">
+
+        <h3><label for="body">Main Body</label></h3>
+        <textarea id="body" name="body" rows="4" cols="50"></textarea>
+
+        <br />
+
+        <input type="submit" value="Post" />
+    </form>
+
+    <%- include("partials/footer.ejs") %>
